@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="bg-white shadow rounded-lg">
+    <div class="px-4 py-5 sm:p-6">
+        <h1 class="text-2xl font-bold text-gray-900 mb-6">Dashboard</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-blue-50 p-6 rounded-lg">
+                <h2 class="text-lg font-semibold text-blue-800">Products</h2>
+                <a href="/products" class="mt-2 inline-block text-blue-600 hover:text-blue-800">Manage Products →</a>
+            </div>
+            
+            <div class="bg-green-50 p-6 rounded-lg">
+                <h2 class="text-lg font-semibold text-green-800">Users</h2>
+                <a href="/users" class="mt-2 inline-block text-green-600 hover:text-green-800">Manage Users →</a>
+            </div>
+            
+            <div class="bg-purple-50 p-6 rounded-lg">
+                <h2 class="text-lg font-semibold text-purple-800">Orders</h2>
+                <a href="/orders" class="mt-2 inline-block text-purple-600 hover:text-purple-800">Manage Orders →</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
